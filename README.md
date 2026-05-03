@@ -1,43 +1,42 @@
-# Astro Starter Kit: Minimal
+# 01. Instalación y Configuración de Astro
 
-```sh
-pnpm create astro@latest -- --template minimal
-```
+*Carolina Fortmann*
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+### 1.- Descripción de la práctica:
 
-## 🚀 Project Structure
+Este proyecto utiliza **Astro 5.x** como framework principal, aprovechando su capacidad para generar sitios estáticos y optimizados. 
+Es importante verificar que la configuracion de *Node.js* y *pnpm* estén correctas:
 
-Inside of your Astro project, you'll see the following folders and files:
+*   Verificar la versión de *Node.js* con: ```node --version```
+*   Verificar la versión de *pnpm* con: ```pnpm --version```
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+#### ¿Qué se realizó?
+*   Se inicializa un proyecto Astro con la plantilla mínima.
+*   Se configura la salida estática y la identidad del sitio.
+*   Se crea la primera página de inicio funcional utilizando componentes de Astro.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+### 2.- Capturas:
 
-Any static assets, like images, can be placed in the `public/` directory.
+#### 1. Creación del Proyecto:
+![Instalación de Astro](evidencias/assets/01-instalacion.png)
 
-## 🧞 Commands
+**Descripción:** Se muestra el proceso de configuración inicial con el CLI de Astro, donde se seleccionó la plantilla minimalista y la configuración de TypeScript.
 
-All commands are run from the root of the project, from a terminal:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+#### 2. Información del entorno:
+![Astro Info](evidencias/assets/01-astro-info.png)
 
-## 👀 Want to learn more?
+**Descripción:** Se usa el comando `pnpm astro info` para validar que el proyecto está configurado con salida estática y reconociendo el gestor de paquetes pnpm.
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+#### 3. Home page funcionando en ```localhost:4321```:
+![Sitio en Localhost](evidencias/assets/01-localhost.png)
+
+**Descripción:** Vista del navegador en ```http://localhost:4321```. Se confirma que los componentes de Astro están renderizando correctamente el título y la descripción de la página.
+
+
+#### 4. Build de producción:
+![Build de Producción](evidencias/assets/01-build.png)
+
+**Descripción:** Resultado final tras ejecutar ```pnpm build```, mostrando la generación exitosa de los archivos HTML y los recursos listos para producción.
