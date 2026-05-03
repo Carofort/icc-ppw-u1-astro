@@ -40,3 +40,40 @@ Es importante verificar que la configuracion de *Node.js* y *pnpm* estén correc
 ![Build de Producción](evidencias/assets/01-build.png)
 
 **Descripción:** Resultado final tras ejecutar ```pnpm build```, mostrando la generación exitosa de los archivos HTML y los recursos listos para producción.
+
+---
+
+# 02. Fundamentos de Astro
+
+### 1.- Descripción de la práctica:
+
+Esta segunda práctia de Astro se enfocó en la creación de componentes reutilizables, el uso de *props* tipados con TypeScript y el sistema de enrutamiento basado en archivos.
+
+#### ¿Qué se realizó?
+*   *Creación de Componentes:* Se desarrolló el componente ```RecursoCard.astro``` para estandarizar la visualización de enlaces y recursos externos.
+
+*   *Props y Tipado:* Se implementó una interfaz de TypeScript para asegurar que cada tarjeta reciba los datos correctos.
+
+*   *Enrutamiento Automático:* Se añadió la página ```about.astro```, validando cómo Astro genera rutas nuevas automáticamente en el directorio ```src/pages/```.
+
+*   *Lógica de Renderizado:* Se aplicó renderizado condicional para mostrar diferentes mensajes según el entorno y para manejar listas de datos.
+
+
+### 2.- Capturas:
+
+#### 1. Home page con componentes Card:
+![Index con Cards](evidencias/assets/02-index-cards.png)
+
+**Descripción:** Vista de la página principal donde se observa el uso de ```RecursoCard``` para listar los recursos oficiales.
+
+
+#### 2. Página "Acerca de" y Renderizado Condicional:
+![Página About](evidencias/assets/02-about.png)
+
+**Descripción:** Se muestra la ruta ```/about``` funcionando correctamente. En la parte inferior se observa el mensaje de "Modo desarrollo", validando la lógica de renderizado basada en variables de entorno.
+
+
+#### 3. Sección de Herramientas de ```about.astro```:
+![Sección Herramientas](evidencias/assets/02-about-completo.png)
+
+**Descripción:** Captura de la sección de herramientas implementada en la página de información, utilizando nuevamente el componente ```RecursoCard``` y lógica de mapeo de arreglos en el *frontmatter*.
